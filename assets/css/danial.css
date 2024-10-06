@@ -1,7 +1,7 @@
-main {
+* {
     margin: 0;
     padding: 0;
-    float: right;
+    box-sizing: border-box;
 }
 
 .toggle {
@@ -10,6 +10,7 @@ main {
     height: 80px;
     cursor: pointer;
     transition: .5s;
+    float: right;
 }
 
 .toggle span {
@@ -79,4 +80,50 @@ main {
     height: 100%;
     background: #262626;
     transition: .5s;
+
+
+}
+
+.menu-ul {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    font-family: monospace;
+    font-size: 5rem;
+    line-height: 1.8;
+    text-align: center;
+
+    >li {
+        width: 100vw;
+        cursor: none;
+
+        >a {
+            border-radius: 2rem;
+            text-decoration: none;
+            color: white;
+            padding: 1.5rem;
+            cursor: none;
+        }
+    }
+
+    >li:hover {
+        background: #303030;
+        transition: 1s;
+    }
+}
+
+.cursor {
+    display: none;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 5;
+    mix-blend-mode: difference;
 }
