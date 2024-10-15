@@ -27,7 +27,7 @@
     <main class="tdl-container">
 
         <!-- title -->
-        <div class="relative">
+        <div class="relative pointer-events-none">
             <div class="title-bg"></div>
             <h1 class="title">To Do List</h1>
         </div>
@@ -41,47 +41,40 @@
         <!-- end of task inputs -->
 
         <!-- task output -->
-        <div class="task-output-container">
-            <input disabled class="task-output" type="text" name="task" id="task-input"
-                placeholder="Create a to do list with js and tailwind">
-            <div class="task-output-wall"></div>
-        </div>
+        <!-- <div class="task-output-container">
+                            <input disabled class="task-output" type="text" name="task" id="task-input"
+                                placeholder="Create a to do list with js and tailwind">
+                            <div class="task-output-wall"></div>
+                        </div> -->
         <!-- end of task output -->
 
         <!-- task output -->
-        <div class="task-output-container">
-            <input disabled class="task-output" type="text" name="task" id="task-input"
-                placeholder="Create a to do list with js and tailwind">
-            <div class="task-output-wall"></div>
-        </div>
-        <!-- end of task output -->
-
-        <!-- task output -->
-        <div class="task-output-container">
+        <!-- <div class="task-output-container">
             <input disabled class="task-output placeholder:line-through placeholder:text-slate-600 hover:bg-slate-800"
                 type="text" name="task" id="task-input" placeholder="Create a to do list with js and tailwind">
             <div class="task-output-wall"></div>
-        </div>
+        </div> -->
         <!-- end of task output -->
 
-        <!-- Contex Menu ( Right Click ) -->
-        <div class="contex-menu relative">
-            <ul class="text-center relative p-4 rounded-none">
-                <div class="context-menu-bg"></div>
-                <li class="my-3"><a
-                        class="hover:bg-slate-600 w-full rounded-full py-2 px-4 text-2xl font-mono font-bold text-slate-400"
+        <!-- Context Menu ( Right Click ) -->
+        <div class="context-menu z-50 fixed hidden">
+            <ul class="text-center relative p-4 rounded-none z-50">
+                <div class="context-menu-bg z-50"></div>
+                <li id="edit-output" class="my-3 z-50"><a
+                        class="relative hover:bg-slate-600 w-full rounded-full py-2 px-4 text-2xl font-mono font-bold text-slate-400 z-50"
                         href="#">Edit</a>
                 </li>
-                <li class="my-3"><a
-                        class="hover:bg-slate-600 w-full rounded-full py-2 px-4 text-2xl font-mono font-bold text-slate-400"
+                <li id="delete-output" class="my-3 z-50"><a
+                        class="relative hover:bg-slate-600 w-full rounded-full py-2 px-4 text-2xl font-mono font-bold text-slate-400 z-50"
                         href="#">Delete</a></li>
             </ul>
         </div>
-        <!-- End of Contex Menu ( Right Click ) -->
+        <!-- End of Context Menu ( Right Click ) -->
 
     </main>
 
     <script src="./assets/js/danial.js"></script>
+    <script src="./assets/js/todolist.js"></script>
 </body>
 
 </html>

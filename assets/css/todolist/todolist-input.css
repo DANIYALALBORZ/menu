@@ -29,15 +29,15 @@
 }
 
 .task-input-container {
-    @apply my-6 w-2/3 text-center;
+    @apply my-6 w-2/3 text-center flex;
 }
 
 .task-input {
-    @apply rounded-s-lg bg-slate-900 p-3 w-10/12 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-2xl font-mono font-bold;
+    @apply rounded-s-lg bg-slate-900 p-3 w-10/12 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-xl font-mono font-bold;
 }
 
 .add-btn {
-    @apply rounded-r-lg bg-slate-900 text-white/50 p-3 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-2xl font-mono;
+    @apply rounded-r-lg bg-slate-900 text-white/50 p-3 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-xl font-mono;
 }
 
 .task-output-container {
@@ -45,7 +45,7 @@
 }
 
 .task-output {
-    @apply rounded-lg bg-slate-900 p-3 ps-6 w-full disabled:cursor-pointer focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-xl font-mono font-bold;
+    @apply rounded-lg bg-slate-900 p-3 ps-6 w-full disabled:cursor-pointer focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-sm font-mono font-bold;
 }
 
 .task-output-wall {
@@ -53,5 +53,9 @@
 }
 
 .context-menu-bg {
-    @apply absolute inset-0 bg-slate-900/30 blur-sm;
+    @apply absolute inset-0 bg-slate-600/80 blur-sm;
+}
+
+.done {
+    @apply pointer-events-none placeholder:line-through placeholder:text-slate-600 hover:bg-slate-800;
 }

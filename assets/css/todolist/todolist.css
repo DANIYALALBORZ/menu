@@ -554,13 +554,29 @@ video {
   display: none;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .w-full {
@@ -681,6 +697,7 @@ video {
 .task-input-container {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  display: flex;
   width: 66.666667%;
   text-align: center;
 }
@@ -693,8 +710,8 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   padding: 0.75rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
 }
 
@@ -722,8 +739,8 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   padding: 0.75rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   color: rgb(255 255 255 / 0.5);
 }
 
@@ -760,8 +777,8 @@ video {
   padding: 0.75rem;
   padding-inline-start: 1.5rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 700;
 }
 
@@ -802,9 +819,30 @@ video {
 .context-menu-bg {
   position: absolute;
   inset: 0px;
-  background-color: rgb(15 23 42 / 0.3);
+  background-color: rgb(71 85 105 / 0.8);
   --tw-blur: blur(4px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.done {
+  pointer-events: none;
+}
+
+.done::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+  text-decoration-line: line-through;
+}
+
+.done::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+  text-decoration-line: line-through;
+}
+
+.done:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .placeholder\:text-slate-600::-moz-placeholder {
