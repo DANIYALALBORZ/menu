@@ -1,0 +1,11 @@
+{
+  "name": "menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./assets/css/todolist/todolist-input.css -o ./assets/css/todolist/todolist.css --watch"
+  },
+  "author": "Danial Alborz",
+  "license": "ISC"
+}

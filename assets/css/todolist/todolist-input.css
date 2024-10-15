@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .reset-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .reset-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+.tdl-container {
+    @apply flex flex-col items-center absolute w-3/4 h-[75vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-scroll bg-slate-700 reset-scrollbar rounded-lg shadow-2xl p-8;
+}
+
+.title {
+    @apply font-mono text-3xl p-8 rounded-2xl text-slate-400/80;
+}
+
+.title-bg {
+    @apply absolute inset-0 bg-slate-900/30 blur-sm rounded-full;
+}
+
+.task-input-container {
+    @apply my-6 w-2/3 text-center;
+}
+
+.task-input {
+    @apply rounded-s-lg bg-slate-900 p-3 w-10/12 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-2xl font-mono font-bold;
+}
+
+.add-btn {
+    @apply rounded-r-lg bg-slate-900 text-white/50 p-3 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-2xl font-mono;
+}
+
+.task-output-container {
+    @apply my-1 w-2/3 text-center relative;
+}
+
+.task-output {
+    @apply rounded-lg bg-slate-900 p-3 ps-6 w-full disabled:cursor-pointer focus:outline-none focus:ring-2 focus:ring-slate-400 focus:text-slate-400 hover:bg-slate-600 text-xl font-mono font-bold;
+}
+
+.task-output-wall {
+    @apply absolute top-1/2 -translate-y-1/2 left-2 w-1 h-8 bg-slate-400 rounded-full;
+}
+
+.context-menu-bg {
+    @apply absolute inset-0 bg-slate-900/30 blur-sm;
+}
