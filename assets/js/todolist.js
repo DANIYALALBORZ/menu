@@ -68,3 +68,9 @@ document.querySelectorAll('.task-output').forEach(task => { attachContextMenu(ta
 document.addEventListener('click', () => { contextMenu.classList.add('hidden') });
 
 // End of Context Menu
+
+// cursor reset
+let tdlContainer2 = document.querySelector('.tdl-container');
+tdlContainer.addEventListener('mouseenter', () => {
+    tdlContainer.style.cursor = 'auto';
+})
